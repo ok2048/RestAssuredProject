@@ -1,0 +1,1310 @@
+Request method:	POST
+Request URI:	http://localhost:5000/register
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "username": "LLNSLO",
+    "password": "OQEIODSN"
+}
+HTTP/1.1 201 CREATED
+Server: Werkzeug/3.0.1 Python/3.10.13
+Date: Wed, 13 Mar 2024 20:50:34 GMT
+Content-Type: application/json
+Content-Length: 48
+Connection: close
+
+{
+    "message": "User registered successfully"
+}
+Request method:	POST
+Request URI:	http://localhost:5000/login
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "username": "LLNSLO",
+    "password": "OQEIODSN"
+}
+HTTP/1.1 200 OK
+Server: Werkzeug/3.0.1 Python/3.10.13
+Date: Wed, 13 Mar 2024 20:50:34 GMT
+Content-Type: application/json
+Content-Length: 357
+Connection: close
+
+{
+    "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTcxMDM2MzAzNCwianRpIjoiM2ViYjYzZTgtZTRmZC00YjU2LThkNmEtNDYxMzUyYWM3MmY1IiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IkxMTlNMTyIsIm5iZiI6MTcxMDM2MzAzNCwiY3NyZiI6IjAyMWMzYThmLTVmY2MtNGZhZi04ODJjLTQ0ZmRlNTI5MDhhYyIsImV4cCI6MTcxMDM2MzkzNH0.fh4Vw4-Zi2GL1d1e7A0075pJTLHCnPgUlwcYgXTOenI"
+}
+Request method:	GET
+Request URI:	http://localhost:5000/products
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Server: Werkzeug/3.0.1 Python/3.10.13
+Date: Wed, 13 Mar 2024 20:50:35 GMT
+Content-Type: application/json
+Content-Length: 2010
+Connection: close
+
+[
+    {
+        "category": "Electronics",
+        "discount": 10.0,
+        "id": 1,
+        "name": "HP Pavilion Laptop",
+        "price": 10.99
+    },
+    {
+        "category": "Electronics",
+        "discount": null,
+        "id": 2,
+        "name": "Samsung Galaxy Smartphone",
+        "price": 15.99
+    },
+    {
+        "category": "Clothing",
+        "discount": 2.5,
+        "id": 3,
+        "name": "Adidas T-shirt",
+        "price": 8.99
+    },
+    {
+        "category": "Clothing",
+        "discount": 15.0,
+        "id": 4,
+        "name": "Levis Jeans",
+        "price": 12.99
+    },
+    {
+        "category": "Electronics",
+        "discount": 10.0,
+        "id": 5,
+        "name": "HP Pavilion Laptop",
+        "price": 10.99
+    },
+    {
+        "category": "Electronics",
+        "discount": null,
+        "id": 6,
+        "name": "Samsung Galaxy Smartphone",
+        "price": 15.99
+    },
+    {
+        "category": "Clothing",
+        "discount": 2.5,
+        "id": 7,
+        "name": "Adidas T-shirt",
+        "price": 8.99
+    },
+    {
+        "category": "Clothing",
+        "discount": 15.0,
+        "id": 8,
+        "name": "Levis Jeans",
+        "price": 12.99
+    },
+    {
+        "category": "Electronics",
+        "discount": 10.0,
+        "id": 9,
+        "name": "HP Pavilion Laptop",
+        "price": 10.99
+    },
+    {
+        "category": "Electronics",
+        "discount": null,
+        "id": 10,
+        "name": "Samsung Galaxy Smartphone",
+        "price": 15.99
+    },
+    {
+        "category": "Clothing",
+        "discount": 2.5,
+        "id": 11,
+        "name": "Adidas T-shirt",
+        "price": 8.99
+    },
+    {
+        "category": "Clothing",
+        "discount": 15.0,
+        "id": 12,
+        "name": "Levis Jeans",
+        "price": 12.99
+    },
+    {
+        "category": "Electronics",
+        "discount": 10.0,
+        "id": 13,
+        "name": "HP Pavilion Laptop",
+        "price": 10.99
+    },
+    {
+        "category": "Electronics",
+        "discount": null,
+        "id": 14,
+        "name": "Samsung Galaxy Smartphone",
+        "price": 15.99
+    },
+    {
+        "category": "Clothing",
+        "discount": 2.5,
+        "id": 15,
+        "name": "Adidas T-shirt",
+        "price": 8.99
+    },
+    {
+        "category": "Clothing",
+        "discount": 15.0,
+        "id": 16,
+        "name": "Levis Jeans",
+        "price": 12.99
+    }
+]
+Request method:	POST
+Request URI:	http://localhost:5000/cart
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "product_id": 1,
+    "quantity": 2
+}
+HTTP/1.1 201 CREATED
+Server: Werkzeug/3.0.1 Python/3.10.13
+Date: Wed, 13 Mar 2024 20:50:35 GMT
+Content-Type: application/json
+Content-Length: 54
+Connection: close
+
+{
+    "message": "Product added to cart successfully"
+}
+Request method:	DELETE
+Request URI:	http://localhost:5000/cart/1
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Server: Werkzeug/3.0.1 Python/3.10.13
+Date: Wed, 13 Mar 2024 20:50:35 GMT
+Content-Type: application/json
+Content-Length: 45
+Connection: close
+
+{
+    "message": "Product removed from cart"
+}
+Request method:	GET
+Request URI:	http://localhost:5000/products
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Server: Werkzeug/3.0.1 Python/3.10.13
+Date: Wed, 13 Mar 2024 20:50:35 GMT
+Content-Type: application/json
+Content-Length: 2010
+Connection: close
+
+[
+    {
+        "category": "Electronics",
+        "discount": 10.0,
+        "id": 1,
+        "name": "HP Pavilion Laptop",
+        "price": 10.99
+    },
+    {
+        "category": "Electronics",
+        "discount": null,
+        "id": 2,
+        "name": "Samsung Galaxy Smartphone",
+        "price": 15.99
+    },
+    {
+        "category": "Clothing",
+        "discount": 2.5,
+        "id": 3,
+        "name": "Adidas T-shirt",
+        "price": 8.99
+    },
+    {
+        "category": "Clothing",
+        "discount": 15.0,
+        "id": 4,
+        "name": "Levis Jeans",
+        "price": 12.99
+    },
+    {
+        "category": "Electronics",
+        "discount": 10.0,
+        "id": 5,
+        "name": "HP Pavilion Laptop",
+        "price": 10.99
+    },
+    {
+        "category": "Electronics",
+        "discount": null,
+        "id": 6,
+        "name": "Samsung Galaxy Smartphone",
+        "price": 15.99
+    },
+    {
+        "category": "Clothing",
+        "discount": 2.5,
+        "id": 7,
+        "name": "Adidas T-shirt",
+        "price": 8.99
+    },
+    {
+        "category": "Clothing",
+        "discount": 15.0,
+        "id": 8,
+        "name": "Levis Jeans",
+        "price": 12.99
+    },
+    {
+        "category": "Electronics",
+        "discount": 10.0,
+        "id": 9,
+        "name": "HP Pavilion Laptop",
+        "price": 10.99
+    },
+    {
+        "category": "Electronics",
+        "discount": null,
+        "id": 10,
+        "name": "Samsung Galaxy Smartphone",
+        "price": 15.99
+    },
+    {
+        "category": "Clothing",
+        "discount": 2.5,
+        "id": 11,
+        "name": "Adidas T-shirt",
+        "price": 8.99
+    },
+    {
+        "category": "Clothing",
+        "discount": 15.0,
+        "id": 12,
+        "name": "Levis Jeans",
+        "price": 12.99
+    },
+    {
+        "category": "Electronics",
+        "discount": 10.0,
+        "id": 13,
+        "name": "HP Pavilion Laptop",
+        "price": 10.99
+    },
+    {
+        "category": "Electronics",
+        "discount": null,
+        "id": 14,
+        "name": "Samsung Galaxy Smartphone",
+        "price": 15.99
+    },
+    {
+        "category": "Clothing",
+        "discount": 2.5,
+        "id": 15,
+        "name": "Adidas T-shirt",
+        "price": 8.99
+    },
+    {
+        "category": "Clothing",
+        "discount": 15.0,
+        "id": 16,
+        "name": "Levis Jeans",
+        "price": 12.99
+    }
+]
+Request method:	POST
+Request URI:	http://localhost:5000/cart
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "product_id": 1,
+    "quantity": 2
+}
+HTTP/1.1 201 CREATED
+Server: Werkzeug/3.0.1 Python/3.10.13
+Date: Wed, 13 Mar 2024 20:50:35 GMT
+Content-Type: application/json
+Content-Length: 54
+Connection: close
+
+{
+    "message": "Product added to cart successfully"
+}
+Request method:	GET
+Request URI:	http://localhost:5000/products
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Server: Werkzeug/3.0.1 Python/3.10.13
+Date: Wed, 13 Mar 2024 20:50:35 GMT
+Content-Type: application/json
+Content-Length: 2010
+Connection: close
+
+[
+    {
+        "category": "Electronics",
+        "discount": 10.0,
+        "id": 1,
+        "name": "HP Pavilion Laptop",
+        "price": 10.99
+    },
+    {
+        "category": "Electronics",
+        "discount": null,
+        "id": 2,
+        "name": "Samsung Galaxy Smartphone",
+        "price": 15.99
+    },
+    {
+        "category": "Clothing",
+        "discount": 2.5,
+        "id": 3,
+        "name": "Adidas T-shirt",
+        "price": 8.99
+    },
+    {
+        "category": "Clothing",
+        "discount": 15.0,
+        "id": 4,
+        "name": "Levis Jeans",
+        "price": 12.99
+    },
+    {
+        "category": "Electronics",
+        "discount": 10.0,
+        "id": 5,
+        "name": "HP Pavilion Laptop",
+        "price": 10.99
+    },
+    {
+        "category": "Electronics",
+        "discount": null,
+        "id": 6,
+        "name": "Samsung Galaxy Smartphone",
+        "price": 15.99
+    },
+    {
+        "category": "Clothing",
+        "discount": 2.5,
+        "id": 7,
+        "name": "Adidas T-shirt",
+        "price": 8.99
+    },
+    {
+        "category": "Clothing",
+        "discount": 15.0,
+        "id": 8,
+        "name": "Levis Jeans",
+        "price": 12.99
+    },
+    {
+        "category": "Electronics",
+        "discount": 10.0,
+        "id": 9,
+        "name": "HP Pavilion Laptop",
+        "price": 10.99
+    },
+    {
+        "category": "Electronics",
+        "discount": null,
+        "id": 10,
+        "name": "Samsung Galaxy Smartphone",
+        "price": 15.99
+    },
+    {
+        "category": "Clothing",
+        "discount": 2.5,
+        "id": 11,
+        "name": "Adidas T-shirt",
+        "price": 8.99
+    },
+    {
+        "category": "Clothing",
+        "discount": 15.0,
+        "id": 12,
+        "name": "Levis Jeans",
+        "price": 12.99
+    },
+    {
+        "category": "Electronics",
+        "discount": 10.0,
+        "id": 13,
+        "name": "HP Pavilion Laptop",
+        "price": 10.99
+    },
+    {
+        "category": "Electronics",
+        "discount": null,
+        "id": 14,
+        "name": "Samsung Galaxy Smartphone",
+        "price": 15.99
+    },
+    {
+        "category": "Clothing",
+        "discount": 2.5,
+        "id": 15,
+        "name": "Adidas T-shirt",
+        "price": 8.99
+    },
+    {
+        "category": "Clothing",
+        "discount": 15.0,
+        "id": 16,
+        "name": "Levis Jeans",
+        "price": 12.99
+    }
+]
+Request method:	POST
+Request URI:	http://localhost:5000/cart
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "product_id": 1,
+    "quantity": 2
+}
+HTTP/1.1 201 CREATED
+Server: Werkzeug/3.0.1 Python/3.10.13
+Date: Wed, 13 Mar 2024 20:50:35 GMT
+Content-Type: application/json
+Content-Length: 54
+Connection: close
+
+{
+    "message": "Product added to cart successfully"
+}
+Request method:	GET
+Request URI:	http://localhost:5000/cart
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Server: Werkzeug/3.0.1 Python/3.10.13
+Date: Wed, 13 Mar 2024 20:50:35 GMT
+Content-Type: application/json
+Content-Length: 231
+Connection: close
+
+{
+    "cart": [
+        {
+            "category": "Electronics",
+            "discount": 10.0,
+            "id": 1,
+            "name": "HP Pavilion Laptop",
+            "price": 10.99,
+            "quantity": 5
+        }
+    ],
+    "total_discount": 5.5,
+    "total_price": 54.95
+}
+Request method:	POST
+Request URI:	http://localhost:5000/products
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "name": "Xiaomi phone",
+    "category": "Electronics",
+    "price": 159.99,
+    "discount": 5
+}
+HTTP/1.1 405 METHOD NOT ALLOWED
+Server: Werkzeug/3.0.1 Python/3.10.13
+Date: Wed, 13 Mar 2024 20:50:35 GMT
+Content-Type: text/html; charset=utf-8
+Allow: HEAD, GET, OPTIONS
+Content-Length: 153
+Connection: close
+
+<html lang="en">
+  <head>
+    <title>405 Method Not Allowed</title>
+  </head>
+  <body>
+    <h1>Method Not Allowed</h1>
+    <p>The method is not allowed for the requested URL.</p>
+  </body>
+</html>
+Request method:	GET
+Request URI:	http://localhost:5000/products
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Server: Werkzeug/3.0.1 Python/3.10.13
+Date: Wed, 13 Mar 2024 20:50:35 GMT
+Content-Type: application/json
+Content-Length: 2010
+Connection: close
+
+[
+    {
+        "category": "Electronics",
+        "discount": 10.0,
+        "id": 1,
+        "name": "HP Pavilion Laptop",
+        "price": 10.99
+    },
+    {
+        "category": "Electronics",
+        "discount": null,
+        "id": 2,
+        "name": "Samsung Galaxy Smartphone",
+        "price": 15.99
+    },
+    {
+        "category": "Clothing",
+        "discount": 2.5,
+        "id": 3,
+        "name": "Adidas T-shirt",
+        "price": 8.99
+    },
+    {
+        "category": "Clothing",
+        "discount": 15.0,
+        "id": 4,
+        "name": "Levis Jeans",
+        "price": 12.99
+    },
+    {
+        "category": "Electronics",
+        "discount": 10.0,
+        "id": 5,
+        "name": "HP Pavilion Laptop",
+        "price": 10.99
+    },
+    {
+        "category": "Electronics",
+        "discount": null,
+        "id": 6,
+        "name": "Samsung Galaxy Smartphone",
+        "price": 15.99
+    },
+    {
+        "category": "Clothing",
+        "discount": 2.5,
+        "id": 7,
+        "name": "Adidas T-shirt",
+        "price": 8.99
+    },
+    {
+        "category": "Clothing",
+        "discount": 15.0,
+        "id": 8,
+        "name": "Levis Jeans",
+        "price": 12.99
+    },
+    {
+        "category": "Electronics",
+        "discount": 10.0,
+        "id": 9,
+        "name": "HP Pavilion Laptop",
+        "price": 10.99
+    },
+    {
+        "category": "Electronics",
+        "discount": null,
+        "id": 10,
+        "name": "Samsung Galaxy Smartphone",
+        "price": 15.99
+    },
+    {
+        "category": "Clothing",
+        "discount": 2.5,
+        "id": 11,
+        "name": "Adidas T-shirt",
+        "price": 8.99
+    },
+    {
+        "category": "Clothing",
+        "discount": 15.0,
+        "id": 12,
+        "name": "Levis Jeans",
+        "price": 12.99
+    },
+    {
+        "category": "Electronics",
+        "discount": 10.0,
+        "id": 13,
+        "name": "HP Pavilion Laptop",
+        "price": 10.99
+    },
+    {
+        "category": "Electronics",
+        "discount": null,
+        "id": 14,
+        "name": "Samsung Galaxy Smartphone",
+        "price": 15.99
+    },
+    {
+        "category": "Clothing",
+        "discount": 2.5,
+        "id": 15,
+        "name": "Adidas T-shirt",
+        "price": 8.99
+    },
+    {
+        "category": "Clothing",
+        "discount": 15.0,
+        "id": 16,
+        "name": "Levis Jeans",
+        "price": 12.99
+    }
+]
+Request method:	PUT
+Request URI:	http://localhost:5000/products/1
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "name": "Xiaomi phone",
+    "category": "Electronics",
+    "price": 159.99,
+    "discount": 5
+}
+HTTP/1.1 405 METHOD NOT ALLOWED
+Server: Werkzeug/3.0.1 Python/3.10.13
+Date: Wed, 13 Mar 2024 20:50:35 GMT
+Content-Type: text/html; charset=utf-8
+Allow: HEAD, GET, OPTIONS
+Content-Length: 153
+Connection: close
+
+<html lang="en">
+  <head>
+    <title>405 Method Not Allowed</title>
+  </head>
+  <body>
+    <h1>Method Not Allowed</h1>
+    <p>The method is not allowed for the requested URL.</p>
+  </body>
+</html>
+Request method:	GET
+Request URI:	http://localhost:5000/products
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Server: Werkzeug/3.0.1 Python/3.10.13
+Date: Wed, 13 Mar 2024 20:50:35 GMT
+Content-Type: application/json
+Content-Length: 2010
+Connection: close
+
+[
+    {
+        "category": "Electronics",
+        "discount": 10.0,
+        "id": 1,
+        "name": "HP Pavilion Laptop",
+        "price": 10.99
+    },
+    {
+        "category": "Electronics",
+        "discount": null,
+        "id": 2,
+        "name": "Samsung Galaxy Smartphone",
+        "price": 15.99
+    },
+    {
+        "category": "Clothing",
+        "discount": 2.5,
+        "id": 3,
+        "name": "Adidas T-shirt",
+        "price": 8.99
+    },
+    {
+        "category": "Clothing",
+        "discount": 15.0,
+        "id": 4,
+        "name": "Levis Jeans",
+        "price": 12.99
+    },
+    {
+        "category": "Electronics",
+        "discount": 10.0,
+        "id": 5,
+        "name": "HP Pavilion Laptop",
+        "price": 10.99
+    },
+    {
+        "category": "Electronics",
+        "discount": null,
+        "id": 6,
+        "name": "Samsung Galaxy Smartphone",
+        "price": 15.99
+    },
+    {
+        "category": "Clothing",
+        "discount": 2.5,
+        "id": 7,
+        "name": "Adidas T-shirt",
+        "price": 8.99
+    },
+    {
+        "category": "Clothing",
+        "discount": 15.0,
+        "id": 8,
+        "name": "Levis Jeans",
+        "price": 12.99
+    },
+    {
+        "category": "Electronics",
+        "discount": 10.0,
+        "id": 9,
+        "name": "HP Pavilion Laptop",
+        "price": 10.99
+    },
+    {
+        "category": "Electronics",
+        "discount": null,
+        "id": 10,
+        "name": "Samsung Galaxy Smartphone",
+        "price": 15.99
+    },
+    {
+        "category": "Clothing",
+        "discount": 2.5,
+        "id": 11,
+        "name": "Adidas T-shirt",
+        "price": 8.99
+    },
+    {
+        "category": "Clothing",
+        "discount": 15.0,
+        "id": 12,
+        "name": "Levis Jeans",
+        "price": 12.99
+    },
+    {
+        "category": "Electronics",
+        "discount": 10.0,
+        "id": 13,
+        "name": "HP Pavilion Laptop",
+        "price": 10.99
+    },
+    {
+        "category": "Electronics",
+        "discount": null,
+        "id": 14,
+        "name": "Samsung Galaxy Smartphone",
+        "price": 15.99
+    },
+    {
+        "category": "Clothing",
+        "discount": 2.5,
+        "id": 15,
+        "name": "Adidas T-shirt",
+        "price": 8.99
+    },
+    {
+        "category": "Clothing",
+        "discount": 15.0,
+        "id": 16,
+        "name": "Levis Jeans",
+        "price": 12.99
+    }
+]
+Request method:	GET
+Request URI:	http://localhost:5000/products
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Server: Werkzeug/3.0.1 Python/3.10.13
+Date: Wed, 13 Mar 2024 20:50:35 GMT
+Content-Type: application/json
+Content-Length: 2010
+Connection: close
+
+[
+    {
+        "category": "Electronics",
+        "discount": 10.0,
+        "id": 1,
+        "name": "HP Pavilion Laptop",
+        "price": 10.99
+    },
+    {
+        "category": "Electronics",
+        "discount": null,
+        "id": 2,
+        "name": "Samsung Galaxy Smartphone",
+        "price": 15.99
+    },
+    {
+        "category": "Clothing",
+        "discount": 2.5,
+        "id": 3,
+        "name": "Adidas T-shirt",
+        "price": 8.99
+    },
+    {
+        "category": "Clothing",
+        "discount": 15.0,
+        "id": 4,
+        "name": "Levis Jeans",
+        "price": 12.99
+    },
+    {
+        "category": "Electronics",
+        "discount": 10.0,
+        "id": 5,
+        "name": "HP Pavilion Laptop",
+        "price": 10.99
+    },
+    {
+        "category": "Electronics",
+        "discount": null,
+        "id": 6,
+        "name": "Samsung Galaxy Smartphone",
+        "price": 15.99
+    },
+    {
+        "category": "Clothing",
+        "discount": 2.5,
+        "id": 7,
+        "name": "Adidas T-shirt",
+        "price": 8.99
+    },
+    {
+        "category": "Clothing",
+        "discount": 15.0,
+        "id": 8,
+        "name": "Levis Jeans",
+        "price": 12.99
+    },
+    {
+        "category": "Electronics",
+        "discount": 10.0,
+        "id": 9,
+        "name": "HP Pavilion Laptop",
+        "price": 10.99
+    },
+    {
+        "category": "Electronics",
+        "discount": null,
+        "id": 10,
+        "name": "Samsung Galaxy Smartphone",
+        "price": 15.99
+    },
+    {
+        "category": "Clothing",
+        "discount": 2.5,
+        "id": 11,
+        "name": "Adidas T-shirt",
+        "price": 8.99
+    },
+    {
+        "category": "Clothing",
+        "discount": 15.0,
+        "id": 12,
+        "name": "Levis Jeans",
+        "price": 12.99
+    },
+    {
+        "category": "Electronics",
+        "discount": 10.0,
+        "id": 13,
+        "name": "HP Pavilion Laptop",
+        "price": 10.99
+    },
+    {
+        "category": "Electronics",
+        "discount": null,
+        "id": 14,
+        "name": "Samsung Galaxy Smartphone",
+        "price": 15.99
+    },
+    {
+        "category": "Clothing",
+        "discount": 2.5,
+        "id": 15,
+        "name": "Adidas T-shirt",
+        "price": 8.99
+    },
+    {
+        "category": "Clothing",
+        "discount": 15.0,
+        "id": 16,
+        "name": "Levis Jeans",
+        "price": 12.99
+    }
+]
+Request method:	GET
+Request URI:	http://localhost:5000/products/1
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Server: Werkzeug/3.0.1 Python/3.10.13
+Date: Wed, 13 Mar 2024 20:50:35 GMT
+Content-Type: application/json
+Content-Length: 131
+Connection: close
+
+[
+    {
+        "category": "Electronics",
+        "discount": 10.0,
+        "id": 1,
+        "name": "HP Pavilion Laptop",
+        "price": 10.99
+    }
+]
+Request method:	GET
+Request URI:	http://localhost:5000/products
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Server: Werkzeug/3.0.1 Python/3.10.13
+Date: Wed, 13 Mar 2024 20:50:35 GMT
+Content-Type: application/json
+Content-Length: 2010
+Connection: close
+
+[
+    {
+        "category": "Electronics",
+        "discount": 10.0,
+        "id": 1,
+        "name": "HP Pavilion Laptop",
+        "price": 10.99
+    },
+    {
+        "category": "Electronics",
+        "discount": null,
+        "id": 2,
+        "name": "Samsung Galaxy Smartphone",
+        "price": 15.99
+    },
+    {
+        "category": "Clothing",
+        "discount": 2.5,
+        "id": 3,
+        "name": "Adidas T-shirt",
+        "price": 8.99
+    },
+    {
+        "category": "Clothing",
+        "discount": 15.0,
+        "id": 4,
+        "name": "Levis Jeans",
+        "price": 12.99
+    },
+    {
+        "category": "Electronics",
+        "discount": 10.0,
+        "id": 5,
+        "name": "HP Pavilion Laptop",
+        "price": 10.99
+    },
+    {
+        "category": "Electronics",
+        "discount": null,
+        "id": 6,
+        "name": "Samsung Galaxy Smartphone",
+        "price": 15.99
+    },
+    {
+        "category": "Clothing",
+        "discount": 2.5,
+        "id": 7,
+        "name": "Adidas T-shirt",
+        "price": 8.99
+    },
+    {
+        "category": "Clothing",
+        "discount": 15.0,
+        "id": 8,
+        "name": "Levis Jeans",
+        "price": 12.99
+    },
+    {
+        "category": "Electronics",
+        "discount": 10.0,
+        "id": 9,
+        "name": "HP Pavilion Laptop",
+        "price": 10.99
+    },
+    {
+        "category": "Electronics",
+        "discount": null,
+        "id": 10,
+        "name": "Samsung Galaxy Smartphone",
+        "price": 15.99
+    },
+    {
+        "category": "Clothing",
+        "discount": 2.5,
+        "id": 11,
+        "name": "Adidas T-shirt",
+        "price": 8.99
+    },
+    {
+        "category": "Clothing",
+        "discount": 15.0,
+        "id": 12,
+        "name": "Levis Jeans",
+        "price": 12.99
+    },
+    {
+        "category": "Electronics",
+        "discount": 10.0,
+        "id": 13,
+        "name": "HP Pavilion Laptop",
+        "price": 10.99
+    },
+    {
+        "category": "Electronics",
+        "discount": null,
+        "id": 14,
+        "name": "Samsung Galaxy Smartphone",
+        "price": 15.99
+    },
+    {
+        "category": "Clothing",
+        "discount": 2.5,
+        "id": 15,
+        "name": "Adidas T-shirt",
+        "price": 8.99
+    },
+    {
+        "category": "Clothing",
+        "discount": 15.0,
+        "id": 16,
+        "name": "Levis Jeans",
+        "price": 12.99
+    }
+]
+Request method:	DELETE
+Request URI:	http://localhost:5000/products/1
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 405 METHOD NOT ALLOWED
+Server: Werkzeug/3.0.1 Python/3.10.13
+Date: Wed, 13 Mar 2024 20:50:35 GMT
+Content-Type: text/html; charset=utf-8
+Allow: HEAD, GET, OPTIONS
+Content-Length: 153
+Connection: close
+
+<html lang="en">
+  <head>
+    <title>405 Method Not Allowed</title>
+  </head>
+  <body>
+    <h1>Method Not Allowed</h1>
+    <p>The method is not allowed for the requested URL.</p>
+  </body>
+</html>
+Request method:	POST
+Request URI:	http://localhost:5000/register
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "username": "GOJLLX",
+    "password": "LGHQQRVW"
+}
+HTTP/1.1 201 CREATED
+Server: Werkzeug/3.0.1 Python/3.10.13
+Date: Wed, 13 Mar 2024 20:50:35 GMT
+Content-Type: application/json
+Content-Length: 48
+Connection: close
+
+{
+    "message": "User registered successfully"
+}
+Request method:	POST
+Request URI:	http://localhost:5000/login
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "username": "GOJLLX",
+    "password": "LGHQQRVW"
+}
+HTTP/1.1 200 OK
+Server: Werkzeug/3.0.1 Python/3.10.13
+Date: Wed, 13 Mar 2024 20:50:35 GMT
+Content-Type: application/json
+Content-Length: 357
+Connection: close
+
+{
+    "access_token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJmcmVzaCI6ZmFsc2UsImlhdCI6MTcxMDM2MzAzNSwianRpIjoiMWQ3MTEzNDktYTcwOS00NWJiLWEzOTctNDQ3M2M4YWY2MWViIiwidHlwZSI6ImFjY2VzcyIsInN1YiI6IkdPSkxMWCIsIm5iZiI6MTcxMDM2MzAzNSwiY3NyZiI6ImIxZjZiYmQ3LTQzMjMtNDU4Ni1iYWMwLWNlYzQxODQyMDczMyIsImV4cCI6MTcxMDM2MzkzNX0.agj5pNK9ckpP5EJo17FI7TbDBNgzr8yn6bXUf3ElQS8"
+}
+Request method:	POST
+Request URI:	http://localhost:5000/register
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "username": "WHIUVH",
+    "password": "TSCJCMXF"
+}
+HTTP/1.1 201 CREATED
+Server: Werkzeug/3.0.1 Python/3.10.13
+Date: Wed, 13 Mar 2024 20:50:35 GMT
+Content-Type: application/json
+Content-Length: 48
+Connection: close
+
+{
+    "message": "User registered successfully"
+}
