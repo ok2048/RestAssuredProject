@@ -1,3 +1,5 @@
+package ru.t1.restassured.tests.cart;
+
 import io.restassured.RestAssured;
 import io.restassured.filter.log.RequestLoggingFilter;
 import io.restassured.filter.log.ResponseLoggingFilter;
