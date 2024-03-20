@@ -3,24 +3,28 @@ package ru.t1.restassured.tests.product;
 import io.restassured.module.jsv.JsonSchemaValidator;
 import org.junit.jupiter.api.Test;
 import ru.t1.restassured.common.Constants;
-import ru.t1.restassured.tests.BaseApiTest;
 import ru.t1.restassured.dto.ProductDto;
+import ru.t1.restassured.tests.BaseApiTest;
 import ru.t1.restassured.util.GenerationUtil;
 import ru.t1.restassured.util.RestUtil;
 
+/**
+ * Тестовый класс для позитивных тестов каталога товаров (эндпоинт /products, методы GET, POST, PUT, DELETE).
+ */
 public class ProductPositiveTest extends BaseApiTest {
 
     @Test
     public void getAllProducts() {
         RestUtil.execGet(Constants.PRODUCTS_ENDPOINT)
                 .then().log().all().assertThat().statusCode(200)
-                .and().body(JsonSchemaValidator.matchesJsonSchemaInClasspath("product.json"));
+                .and().assertThat()
+                .body(JsonSchemaValidator.matchesJsonSchemaInClasspath("product.json"));
     }
 
     @Test
     public void postAddNewProduct() {
         ProductDto product = GenerationUtil.generateProduct();
-        RestUtil.execPost(Constants.PRODUCT_ENDPOINT, product)
+        RestUtil.execPost(Constants.PRODUCTS_ENDPOINT, product)
                 .then().log().all().assertThat().statusCode(201);
     }
 
@@ -31,7 +35,8 @@ public class ProductPositiveTest extends BaseApiTest {
 
         RestUtil.execGet(Constants.PRODUCTS_ENDPOINT + "/" + id)
                 .then().log().all().assertThat().statusCode(200)
-                .and().body(JsonSchemaValidator.matchesJsonSchemaInClasspath("product.json"));
+                .and().assertThat()
+                .body(JsonSchemaValidator.matchesJsonSchemaInClasspath("product.json"));
     }
 
     @Test

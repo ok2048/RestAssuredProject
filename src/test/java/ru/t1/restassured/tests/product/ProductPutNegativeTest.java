@@ -5,11 +5,14 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
 import ru.t1.restassured.common.Constants;
-import ru.t1.restassured.tests.BaseApiTest;
 import ru.t1.restassured.dto.ProductDto;
+import ru.t1.restassured.tests.BaseApiTest;
 import ru.t1.restassured.util.GenerationUtil;
 import ru.t1.restassured.util.RestUtil;
 
+/**
+ * Тестовый класс для негативных тестов каталога товаров (эндпоинт /products, метод PUT).
+ */
 public class ProductPutNegativeTest extends BaseApiTest {
     @Test
     @Tag("negative")

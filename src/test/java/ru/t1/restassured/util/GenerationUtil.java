@@ -21,6 +21,6 @@ public class GenerationUtil {
 
     public static long generateId() {
         Faker faker = new Faker();
-        return faker.number().numberBetween(1000000,9999999);
+        return faker.number().numberBetween(1000000, 9999999);
     }
 }

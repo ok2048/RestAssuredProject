@@ -4,9 +4,12 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import io.restassured.RestAssured;
 import io.restassured.filter.log.RequestLoggingFilter;
 import io.restassured.filter.log.ResponseLoggingFilter;
+import io.restassured.http.ContentType;
+import org.instancio.Gen;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
 import ru.t1.restassured.common.Constants;
+import ru.t1.restassured.dto.Credentials;
 
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
@@ -37,4 +40,31 @@ public abstract class BaseApiTest {
         }
     }
 
+
+    protected static Credentials registerUniqueUser() {
+        String username = Gen.string().length(6).get();
+        String password = Gen.string().length(8).get();
+
+        RestAssured.given().log().all()
+                .contentType(ContentType.JSON)
+                .body("{" +
+                        "\"username\": \"" + username + "\"," +
+                        "\"password\": \"" + password + "\"" +
+                        "}")
+                .post("/register");
+        return new Credentials(username, password);
+    }
+
+    protected static String authenticate(Credentials credentials) {
+
+
+        return RestAssured.given().log().all()
+                .contentType(ContentType.JSON)
+                .body("{" +
+                        "\"username\": \"" + credentials.username() + "\"," +
+                        "\"password\": \"" + credentials.password() + "\"" +
+                        "}")
+                .when().post("/login")
+                .then().extract().body().jsonPath().getString("access_token");
+    }
 }

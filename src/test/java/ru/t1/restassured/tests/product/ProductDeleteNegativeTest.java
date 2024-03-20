@@ -7,6 +7,9 @@ import ru.t1.restassured.tests.BaseApiTest;
 import ru.t1.restassured.util.GenerationUtil;
 import ru.t1.restassured.util.RestUtil;
 
+/**
+ * Тестовый класс для негативных тестов каталога товаров (эндпоинт /products, метод DELETE).
+ */
 public class ProductDeleteNegativeTest extends BaseApiTest {
     @Test
     @Tag("negative")
