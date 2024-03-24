@@ -60,10 +60,7 @@ public abstract class BaseApiTest {
 
         return RestAssured.given().log().all()
                 .contentType(ContentType.JSON)
-                .body("{" +
-                        "\"username\": \"" + credentials.username() + "\"," +
-                        "\"password\": \"" + credentials.password() + "\"" +
-                        "}")
+                .body(credentials)
                 .when().post("/login")
                 .then().extract().body().jsonPath().getString("access_token");
     }
