@@ -44,19 +44,16 @@ public abstract class BaseApiTest {
     protected static Credentials registerUniqueUser() {
         String username = Gen.string().length(6).get();
         String password = Gen.string().length(8).get();
+        Credentials credentials = new Credentials(username, password);
 
         RestAssured.given().log().all()
                 .contentType(ContentType.JSON)
-                .body("{" +
-                        "\"username\": \"" + username + "\"," +
-                        "\"password\": \"" + password + "\"" +
-                        "}")
+                .body(credentials)
                 .post("/register");
-        return new Credentials(username, password);
+        return credentials;
     }
 
     protected static String authenticate(Credentials credentials) {
-
 
         return RestAssured.given().log().all()
                 .contentType(ContentType.JSON)

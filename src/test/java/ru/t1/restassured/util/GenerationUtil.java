@@ -23,4 +23,5 @@ public class GenerationUtil {
         Faker faker = new Faker();
         return faker.number().numberBetween(1000000, 9999999);
     }
+
 }
